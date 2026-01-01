@@ -1,0 +1,181 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.logo-container.disabled {
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.7;
+}
+
+router-outlet {
+  flex: 1;
+  display: block;
+}
+
+/* 🔹 NAVBAR GENERAL */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* separa izquierda, centro y derecha */
+  background-color: #ffffff;
+  padding: 10px 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* 🔹 Logo Izquierdo */
+.navbar-left {
+  flex: 0 0 auto;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #1b2b50;
+}
+
+.logo-img {
+  width: 45px;
+  height: 45px;
+  margin-right: 8px;
+}
+
+.logo-text {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* 🔹 Enlaces Centrales */
+.navbar-links {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* centra los links */
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.navbar-links a,
+.navbar-links button {
+  text-decoration: none;
+  color: #1b2b50;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar-links a:hover {
+  color: #243864;
+}
+
+/* 🔹 Sección Derecha */
+.navbar-right {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+/* 🔹 Botón "Únete" / "Cerrar sesión" */
+.btn-unete {
+  background-color: #90b2d8;
+  color: #ffffff;
+  border: none;
+  padding: 10px 28px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 15px;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.btn-unete:hover {
+  background-color: #6d6de4;
+  transform: translateY(-2px);
+}
+
+/* 🔹 Toggle del menú (versión móvil) */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 4px 0;
+}
+
+/* 🔹 RESPONSIVO */
+@media (max-width: 900px) {
+  .navbar {
+    padding: 15px 25px;
+    flex-wrap: wrap;
+  }
+
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 15px 0;
+    border-top: 1px solid #ddd;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .navbar-links a,
+  .navbar-links button {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  /* 🔹 Botón centrado en móvil */
+  .navbar-right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .btn-unete {
+    width: 80%;
+    max-width: 220px;
+    margin: 10px auto;
+  }
+
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+}

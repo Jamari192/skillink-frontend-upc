@@ -1,0 +1,74 @@
+<div class="expertos-container">
+  <h1 class="titulo">Nuestros Expertos</h1>
+  <p class="subtitulo">
+    Explora nuestra red de expertos en diversas áreas y encuentra el asesor ideal para tus necesidades.
+  </p>
+
+  <div class="buscador">
+    <input
+      type="text"
+      placeholder="Buscar por nombre o especialidad..."
+      [(ngModel)]="terminoBusqueda"
+      (input)="aplicarFiltros()"
+    />
+  </div>
+
+  <!-- 🔹 Categorías -->
+  <div class="categorias">
+    <button
+      *ngFor="let categoria of categorias"
+      [class.activo]="categoriaActiva === categoria"
+      (click)="filtrarPorCategoria(categoria)">
+      {{ categoria }}
+    </button>
+  </div>
+
+  <div class="contenido-principal">
+    <!-- 🔹 Filtros -->
+    <aside class="filtros">
+      <h3>Filtros</h3>
+
+      <!-- Filtro por Precio -->
+      <!-- Filtro por Precio -->
+      <div class="filtro-grupo">
+        <h4>Precios</h4>
+        <select #precioSelect (change)="filtrarPorRangoPrecio(precioSelect.value)">
+          <option value="">Seleccionar rango</option>
+          <option value="0-100">Menos de S/100</option>
+          <option value="100-200">S/100 - S/200</option>
+          <option value="200-500">S/200 - S/500</option>
+          <option value="500-99999">Más de S/500</option>
+        </select>
+      </div>
+
+      <!-- Filtro por Experiencia -->
+      <div class="filtro-grupo">
+        <h4>Experiencia</h4>
+        <select #expSelect (change)="filtrarPorExperienciaRango(expSelect.value)">
+          <option value="">Seleccionar rango</option>
+          <option value="0-1">Menos de 1 año</option>
+          <option value="1-3">1 a 3 años</option>
+          <option value="3-5">3 a 5 años</option>
+          <option value="5-99">Más de 5 años</option>
+        </select>
+      </div>
+
+      <!-- Filtro por Estrellas -->
+
+    </aside>
+
+    <!-- 🔹 Lista de Expertos -->
+    <section class="lista-expertos">
+      <div *ngFor="let c of cartillasFiltradas" class="tarjeta-experto">
+        <img [src]="c.urlcartillaasesor.startsWith('http') ? c.urlcartillaasesor : 'http://localhost:8080/' + c.urlcartillaasesor" [alt]="c.nombrecartillaasesor" class="imagen-experto">
+        <div class="info-experto">
+          <h3>{{ c.nombrecartillaasesor }}</h3>
+          <p class="especialidad">{{ c.especialcartillaasesor }}</p>
+          <p class="descripcion">"{{ c.descripcioncartillaasesor }}"</p>
+          <button class="btn-perfil" [routerLink]="['/verasesor', c.idcartillaasesor]">Ver Perfil</button>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
